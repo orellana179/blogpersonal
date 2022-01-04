@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto+Slab:400,700|Roboto:400,500,700,900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: 'Roboto mono';
+}
+a{
+    text-decoration: none;
+    display: inline;
+    color: black;
+}
+header{
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+header .header-icons-container{
+    width: 100%;
+    height: 50px;
+    display: grid;
+    background-color: #47cfac;
+}
+header .header-icons-container .icons{
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: end;
+    margin-right: 50px;
+}
+header .icons span{
+    color: white
+}
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;
+}
+nav .nav-logo-container{
+    margin-left: 50px;
+}
+nav .nav-logo-container img{
+    width: 220px;
+    margin-top: 10px;
+}
+nav .profile-link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+nav .profile-link a{
+    color: black;
+    border-bottom: 1px solid black;
+    font-family: 'Roboto mono';
+    font-weight: 600;
+    font-size: medium;
+}
+
+/* SECTION MAIN*/ 
+.home-main {
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/asset/img/Cover.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 120px 1fr 1fr;
+    place-content: center;
+}
+.home-main .main{
+    width: 100%;
+    display: grid;
+    grid-column: 2;
+    grid-row: 2;
+    justify-items: center;
+    
+}
+.home-main .main .main-tile{
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Roboto Mono';
+    font-weight: bold;
+    color: white;
+    letter-spacing: 10px;
+}
+.home-main .main .main-more{
+    width: 150px;
+    height: 40px;
+    background-color: #39a086;
+    border: 0;
+    border-radius: 20px;
+    color: black;
+    font-size: 1.6rem;
+    text-align: center;
+    padding-top: 8px;
+    margin: 0 auto;
+    font-family: 'Roboto Mono';
+}
+.home-main .main .main-more:hover{
+    background-color: #4fe6c0;;
+}
+
+/*STYLE PAGE BLOGS.HTML */
+
+.blogs-main{
+    display: grid;
+}
+.blogs-news-container{
+    background-color: #e6e9ed;
+    padding: 0 50px 40px;
+}
+.blog-main-new{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr ;
+}
+.blogs-title{
+    font-size: 2.3rem;
+    font-weight: bolder;
+    margin: 10px;
+}
+.principal-blog-image{
+    grid-column: 1;
+}
+.principal-blog-image img{
+    width: 100%;
+    height: 100%;
+}
+.blogs-info-container{
+    grid-column: 2;
+}
+.blogs-info-container .info-container-title{
+    margin-bottom: 20px;
+    font-size: 2.2rem
+}
+.blogs-info-container .info-container-description{
+    font-size: 1.4rem;
+    color: #225e4f;
+    line-height: 1.7rem;
+    margin-bottom: 20px;
+}
+.blogs-info-container .info-container-button{
+    display: block;
+    text-decoration: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 1.4rem;
+    background-color: #4fe6c0;
+    text-align: center;
+    padding-top: 8px;
+    box-shadow: 1px 1px 2px 2px#4fe6c0;
+}
+.blogs-info-container .info-container-button:hover{
+    background-color: #a6bcda;
+    box-shadow:1px 1px 2px 2px #688cbb;
+}
