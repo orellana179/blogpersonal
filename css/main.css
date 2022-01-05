@@ -82,7 +82,7 @@ nav .profile-link a{
 .home-main {
     width: 100%;
     height: 100%;
-    background-image: url('/assets/asset/img/Cover.png');
+    background-image: url('/assets/assets/img/Cover.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -101,7 +101,7 @@ nav .profile-link a{
 }
 .home-main .main .main-tile{
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: 'Roboto Mono';
     font-weight: bold;
     color: white;
@@ -114,9 +114,9 @@ nav .profile-link a{
     border: 0;
     border-radius: 20px;
     color: black;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     text-align: center;
-    padding-top: 8px;
+    padding-top: 5px;
     margin: 0 auto;
     font-family: 'Roboto Mono';
 }
@@ -206,13 +206,12 @@ footer{
     width: 100%;
     height: 110px;
     background-color: #22272d;
-    border-top: 35px solid #47cfac;
     text-align: center;
 }
 footer p{
-color: wheat;
-margin-top: 30px;
-font-size: 1rem;
+    padding-top: 35px;
+    color: wheat;
+    font-size: 1rem;
 }
 .blogPost-img-container{
     padding: 0 50px 40px;
@@ -273,4 +272,74 @@ font-size: 1rem;
 .contact-main .contact p{
     margin-top: 5px;
     font-size: 0.8rem;
+}
+
+.perfil{
+    padding: 50px 50px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 10px;
+    background-color: #c0d6e2;
+}
+.perfil img{
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 2px #22272d;
+}
+.perfil img:hover{
+    box-shadow: 1px 1px 3px 3px #13332b;
+}
+.perfil .perfil-info{
+    padding: 15px;
+}
+.perfil .perfil-info h1{
+    font-size: 1.8rem;
+    color: #22272d;
+    margin-bottom: 10px;
+}
+.perfil .perfil-info h3{
+    font-size: 1.4rem;
+    color: #22272d;
+    margin-bottom: 5px;
+}
+.perfil .perfil-info p{
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #22272d;
+}
+.perfil .perfil-info p a{
+    color: #7a5dbe;
+}
+.proyect{
+    padding: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 50px 4fr;
+    gap: 20px;
+}
+.proyect .proyect-h1{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #225e4f;
+    border-bottom: 1px solid #13332b;
+}
+.proyect .proyect-items{
+    display: grid;
+    width: 90%;
+    grid-template-columns:repeat(3,2fr);
+    gap: 15px;
+    margin: 0 auto;
+}
+.proyect-items article h3{
+    font-size: 1.4rem;
+    color: #22272d;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.proyect-items article p{
+    font-size: 0.9rem;
+    color: #22272d;
+    margin-bottom: 5px;
 }
