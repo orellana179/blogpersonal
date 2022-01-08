@@ -137,7 +137,7 @@ nav .profile-link a{
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 2fr;
-    gap: 5px 15px;
+    gap: 5px 5px;
 }
 .blogs-title{
     font-size: 1.6rem;
@@ -154,6 +154,7 @@ nav .profile-link a{
     width: 84%;
 }
 .blogs-info-container{
+    padding: 10px;
     grid-column: 2;
 }
 .blogs-info-container .info-container-title{
@@ -275,11 +276,14 @@ footer p{
 }
 
 .perfil{
-    padding: 50px 50px;
+    width: 100%;
+    background-color: #c0d6e2;
+    padding: 50px;
+}
+.perfil-grid{
     display: grid;
     grid-template-columns: 2fr 3fr;
     gap: 10px;
-    background-color: #c0d6e2;
 }
 .perfil img{
     width: 80%;
@@ -328,8 +332,10 @@ footer p{
 .proyect .proyect-items{
     display: grid;
     width: 100%;
-    grid-template-columns:repeat(3,2fr);
+    grid-template-columns:repeat(auto-fit, minmax(20rem,1fr));
+    grid-auto-rows: 1fr;
     gap: 15px;
+    padding: 10px;
 }
 .proyect .proyect-items article{
     border:1px solid#688cbb;
